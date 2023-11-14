@@ -135,3 +135,29 @@
 11/03/2023	14:15:16 --------- idError: c47336bd-d3aa-4dc8-ab0e-8d035ff6beb0 ---- /v1/upload ---- POST ---- Unexpected field
 11/03/2023	14:19:00 --------- idError: a31a4598-c50f-4b5d-babb-ec6429fc48fa ---- /v1/upload ---- POST ---- Unexpected field
 11/03/2023	14:37:48 --------- idError: b2bc79df-eb4a-45b9-a966-33626108006d ---- /v1/upload ---- POST ---- undefined
+11/14/2023	11:20:25 --------- idError: 59db0980-8758-4c11-a641-99a542a2e64b ---- /v1/users/login ---- POST ---- command find requires authentication
+11/14/2023	11:52:50 --------- idError: ea30588f-27e7-442e-b132-b3c37a8baca3 ---- /v1/users/login ---- POST ---- command find requires authentication
+11/14/2023	11:55:51 --------- idError: ec827894-a1a4-4f2d-96d6-52dfc26ddcf0 ---- /v1/users/login ---- POST ---- command find requires authentication
+11/14/2023	14:21:14 --------- idError: 0bd37bd4-c814-4a0c-badd-29eb41fff0e7 ---- /v1/users/login ---- POST ---- This user has not been registered
+11/14/2023	14:21:31 --------- idError: bb3adeb5-d7e5-4f0d-b885-9177dbb75977 ---- /v1/users/register ---- POST ---- "firstName" is not allowed
+11/14/2023	14:23:32 --------- idError: ed36741e-4f84-4d34-a7dd-4c2d44198057 ---- /v1/users/register ---- POST ---- "firstName" is not allowed
+11/14/2023	14:44:15 --------- idError: 7233a5b4-544b-4f08-a34b-51680f49598b ---- /v1/users/register ---- POST ---- "phoneNumber" with value "09090139041" fails to match the required pattern: /^[0-9]{10}$/
+11/14/2023	15:52:13 --------- idError: 4b0c051e-0d75-4ef0-aed3-1c27112fdff3 ---- /v1/users/login ---- POST ---- Route - /v1/users/login  Not Found
+11/14/2023	15:59:20 --------- idError: 159e49f7-c8a8-49c6-9161-dc9a23d439bd ---- /v1/users/login ---- POST ---- Route - /v1/users/login  Not Found
+11/14/2023	16:03:15 --------- idError: ce9282c7-1e46-47bd-bb40-e6256778102a ---- /v1/users/login ---- POST ---- Route - /v1/users/login  Not Found
+11/14/2023	16:14:55 --------- idError: 6df79309-93e9-45a4-be77-007a7abee116 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:17:38 --------- idError: 4fc994a7-84ee-4b75-b984-1c7267b6038b ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:23:02 --------- idError: 43a503cd-0b04-479f-a5e4-b04259c700c0 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:23:20 --------- idError: 9f7b6a6b-c31a-4a21-a843-8c92fc06a261 ---- /v1/users/list ---- GET ---- Too Many Requests
+11/14/2023	16:23:38 --------- idError: 0c3fe0f7-3a67-426d-86a4-3a359f1c0ca5 ---- /v1/users/list ---- GET ---- Too Many Requests
+11/14/2023	16:24:04 --------- idError: 6e3c9ce7-49a5-49ad-8abf-9b9e0e58c601 ---- /v1/users/list ---- GET ---- Too Many Requests
+11/14/2023	16:27:44 --------- idError: d2ff2dae-b27a-4712-85a8-346dd0274fb6 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:27:48 --------- idError: 5f4978cb-643d-4a52-b97c-5bcd0c954857 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:29:37 --------- idError: 269b56eb-cf6f-422b-8583-81d56826d486 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+11/14/2023	16:35:33 --------- idError: 3439b35f-cde6-485c-ab0e-2cedb85e2e5d ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+11/14/2023	16:39:54 --------- idError: 100a23ee-7d8a-4848-aa38-51d1d85e1156 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+11/14/2023	16:40:40 --------- idError: 6a63ea67-1ca2-4939-9496-0904bdc0a1c3 ---- /v1/products/all ---- GET ---- Route - /v1/products/all  Not Found
+11/14/2023	16:44:31 --------- idError: 48e6633d-7062-4cd5-b65e-06ef7d6f1dbc ---- /v1/users/register-otp ---- POST ---- tai.nguy@gmail.com has been already registered
+11/14/2023	16:50:29 --------- idError: fbf44327-b02a-452e-a2ed-5acbd948c5e3 ---- /v1/users/register-otp ---- POST ---- Invalid status code: undefined
+11/14/2023	16:51:03 --------- idError: d7936f76-094a-4273-9bb0-26cf2d1b1332 ---- /v1/users/register-otp ---- POST ---- Invalid status code: undefined
+11/14/2023	16:55:18 --------- idError: 7c9a17b1-9adf-4234-9048-5562c1735846 ---- /v1/users/list ---- GET ---- jwt expired

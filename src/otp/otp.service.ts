@@ -1,8 +1,8 @@
-import { IVerifyOtp, TCreateOtp, TValidOtp } from '@/interfaces/Otp'
-import OtpModel from '@/models/Otp.model'
 import bcrypt from 'bcrypt'
-import userService from './user.service'
 import { errorMessage } from '@/constants'
+import { IVerifyOtp, TCreateOtp, TValidOtp } from './otp.interface'
+import OtpModel from './otp.model'
+import authService from '@/auth/auth.service'
 
 const otpService = {
   insertOtp: async ({ email, otp }: TCreateOtp) => {
@@ -22,7 +22,7 @@ const otpService = {
 
   verifyOtp: async ({ email, password, otp }: IVerifyOtp) => {
     // check existed email
-    const isExisted = await userService.checkEmail({ email })
+    const isExisted = await authService.checkEmail({ email })
     if (isExisted)
       return {
         code: 404,
@@ -45,7 +45,7 @@ const otpService = {
     })
 
     if (isValid && email === lastOtp.email) {
-      const user = await userService.register({ email, password })
+      const user = await authService.register({ email, password })
 
       if (user) {
         await OtpModel.deleteMany({ email })

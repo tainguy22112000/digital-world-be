@@ -1,4 +1,3 @@
-import { IUser, IUserDocument } from '@/interfaces/User'
 import bcrypt from 'bcrypt'
 import {
   CallbackError,
@@ -6,6 +5,7 @@ import {
   Schema,
   model
 } from 'mongoose'
+import { IUser, IUserDocument } from './user.interface'
 
 const UserSchema: Schema<IUserDocument> = new Schema({
   username: {
@@ -25,7 +25,6 @@ UserSchema.pre(
   'save',
   async function (this: IUser, next: CallbackWithoutResultAndOptionalError) {
     try {
-      console.log(`Called before save`, this.username, this.password)
       const salt = await bcrypt.genSalt(10)
       const hashPassword = await bcrypt.hash(this.password, salt)
       this.password = hashPassword

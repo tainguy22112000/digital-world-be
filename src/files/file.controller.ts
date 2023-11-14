@@ -1,6 +1,6 @@
-import uploadService from '@/services/upload.service'
 import { NextFunction, Request, Response } from 'express'
 import { InternalServerError } from 'http-errors'
+import uploadService from './file.service'
 
 export const uploadController = {
   uploadImage: async (req: Request, res: Response, next: NextFunction) => {

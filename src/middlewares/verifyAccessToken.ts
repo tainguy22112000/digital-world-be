@@ -1,6 +1,6 @@
+import { IAuthRequest } from '@/auth/auth.interface'
 import { enviromentConfig } from '@/configs/env.config'
 import { errorMessage } from '@/constants'
-import { IAuthRequest } from '@/interfaces/User'
 import { NextFunction, Response } from 'express'
 import createHttpError from 'http-errors'
 import JWT, { VerifyErrors } from 'jsonwebtoken'

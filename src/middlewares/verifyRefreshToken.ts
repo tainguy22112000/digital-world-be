@@ -2,6 +2,7 @@ import { enviromentConfig } from '@/configs/env.config'
 import client from '@/configs/redis.config'
 import createHttpError from 'http-errors'
 import JWT, { VerifyErrors } from 'jsonwebtoken'
+
 export const verifyRefreshToken = async (
   refreshToken: string
 ): Promise<string> => {

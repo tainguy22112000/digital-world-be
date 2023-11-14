@@ -6,8 +6,9 @@ import morgan from 'morgan'
 import { startServer } from './configs/db.config'
 import { errorHandlerMiddleware } from './middlewares/errors/errorHandlers'
 import { notFoundMiddleware } from './middlewares/errors/notFound'
-import userRouter from './routes/user.route'
-import uploadRouter from './routes/upload.route'
+import userRouter from '@/users/user.route'
+import uploadRouter from '@/files/file.route'
+import authRouter from '@/auth/auth.route'
 
 // Access environment variables
 dotenv.config()
@@ -27,6 +28,7 @@ startServer(app)
 
 // Router
 app.use('/v1', userRouter)
+app.use('/v1', authRouter)
 app.use('/v1', uploadRouter)
 
 app.use(notFoundMiddleware)

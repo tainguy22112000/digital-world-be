@@ -9,8 +9,17 @@ const baseSchema = {
   password: Joi.string().min(4).max(32).required()
 }
 
-const userSchema = {
-  register: Joi.object(baseSchema),
+const authSchema = {
+  register: Joi.object({
+    ...baseSchema,
+    firstName: Joi.string().max(24).required(),
+    lastName: Joi.string().max(24).required(),
+    phoneNumber: Joi.string().trim().regex(/[0-9]/).max(15),
+    gender: Joi.string()
+      .valid('male', 'female')
+      .label("Gender must be one of 'male', 'female"),
+    bio: Joi.string().min(4).max(256)
+  }),
   registerOtp: Joi.object({ email: baseSchema.email }),
   verifyOtp: Joi.object(baseSchema).append({
     otp: Joi.string().length(6).required()
@@ -21,4 +30,4 @@ const userSchema = {
   })
 }
 
-export default userSchema
+export default authSchema

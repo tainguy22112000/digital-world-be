@@ -1,5 +1,5 @@
+import { IUserRegister } from '@/auth/auth.interface'
 import { Document } from 'mongoose'
-import { IUserRegister } from './User'
 
 interface IOtp extends Document {
   email: string

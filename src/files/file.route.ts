@@ -1,6 +1,6 @@
 import { uploadCloud } from '@/configs/cloudinary.config'
-import { uploadController } from '@/controllers/upload.controller'
 import express from 'express'
+import { uploadController } from './file.controller'
 
 const router = express.Router()
 
