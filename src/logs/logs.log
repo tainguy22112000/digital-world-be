@@ -1,0 +1,137 @@
+09/21/2023	17:03:47 --------- idError: 41e2af28-2b63-48ff-b8ab-812e9d614448 ---- /v1/users ---- GET ---- This is error
+09/21/2023	17:04:00 --------- idError: f770f5c7-86f0-4b46-a269-2c2e1dc484a8 ---- /v1/users ---- GET ---- This is error
+09/21/2023	17:04:06 --------- idError: 72c2e7f3-5d96-4dac-884d-a5a943fee79f ---- /v1/users ---- GET ---- This is error
+09/28/2023	14:00:41 --------- idError: a7767b78-2f93-4b28-b7b1-1f14fde40ee0 ---- /v1/users/register ---- POST ---- Bad Request
+09/28/2023	14:00:46 --------- idError: 5afba27e-d7ab-40ce-8c6c-3d434e3c0a29 ---- /v1/users/register ---- POST ---- Bad Request
+09/28/2023	14:02:13 --------- idError: 08a04de0-2b83-4760-beab-ba5aae80cf79 ---- /v1/users/register ---- POST ---- TaiNguy has been already registered
+09/28/2023	16:00:40 --------- idError: 373d1a4c-f44b-4a6f-825f-7fa93a2a634e ---- /v1/users/register ---- POST ---- TaiNguy has been already registered
+09/28/2023	16:01:58 --------- idError: 9dede4e8-8f5c-45dd-b907-6146781cafb8 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:03:29 --------- idError: 9c89f18a-4009-4616-a2e0-338d38e973a6 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:03:58 --------- idError: 672fd5f9-76dc-4416-aaae-bde4015ff8e5 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:04:02 --------- idError: 8d41db9c-faab-46bc-a0f4-0e8e33d026f1 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+09/28/2023	16:04:27 --------- idError: 7227dcd5-cb7e-4c55-9298-894241252a27 ---- /v1/users/register ---- POST ---- "email" with value "tainguy2" fails to match the required pattern: /gmail.com$/
+09/28/2023	17:12:30 --------- idError: 2304a388-1bd7-483c-9358-2f6010839d3c ---- /v1/users/register ---- POST ---- "password" length must be at least 4 characters long
+09/28/2023	17:47:02 --------- idError: 5547072d-b643-429e-9b07-0539ae609e05 ---- /v1/users/register ---- POST ---- TaiNguy2@gmail.com has been already registered
+09/29/2023	10:18:39 --------- idError: f42dcfac-148b-4cb5-917b-b82a7f829b22 ---- /v1/users/register ---- POST ---- TaiNguy2@gmail.com has been already registered
+09/29/2023	11:29:08 --------- idError: 115cd78e-2b8b-4571-aaf4-b0769cb00a28 ---- /v1/users/login ---- POST ---- "password" length must be at least 4 characters long
+09/29/2023	11:29:19 --------- idError: 995805e7-13d9-4b88-b8bd-2966a8e26399 ---- /v1/users/login ---- POST ---- User is not registered
+09/29/2023	11:29:50 --------- idError: 7e9051df-0cae-4373-bb80-f0d24a2bacc6 ---- /v1/users/login ---- POST ---- Invalid password !!!
+09/29/2023	11:30:13 --------- idError: 3563a23d-1f33-4eaa-b19e-82018fe6e01c ---- /v1/users/login ---- POST ---- Unauthorized
+09/29/2023	11:40:10 --------- idError: 74e43f71-225c-4f23-b404-a6354849f0a8 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:40:18 --------- idError: dd98285d-5191-4a00-abf1-79faa2a0a25e ---- /v1/users/register ---- POST ---- tainguy@gmail.com has been already registered
+09/29/2023	11:40:25 --------- idError: c4492c9f-e3d9-462b-a592-29564749cbff ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:41:21 --------- idError: ad7d728f-9ecc-49e4-853e-ca00d5edd552 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	11:45:35 --------- idError: 88967ed0-3c68-44ca-b567-b4ee6532dcdb ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	13:51:42 --------- idError: f33344c1-5d07-4dbf-9854-36b1e96274f1 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	13:56:35 --------- idError: 04675dc2-acb6-4139-aecd-6c4f20230f76 ---- /v1/users/list ---- GET ---- Route - /v1/users/list  Not Found
+09/29/2023	15:01:35 --------- idError: da7ebf31-fe11-4759-ba0f-bb63d755faa3 ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:20:43 --------- idError: b2f6dd5e-b27e-474f-a6b2-1363b57e6b2c ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:21:05 --------- idError: 05415d87-ffce-45ce-9f5a-cdb813c742c8 ---- /v1/users/list ---- GET ---- Unauthorized
+09/29/2023	15:26:48 --------- idError: bfa680c5-941f-4e60-9201-0d2e932f5cf2 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:26:57 --------- idError: e21b5f28-ec17-4adc-9861-855643b29fa5 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:27:43 --------- idError: cee9bc45-2622-4a3b-b5e8-b0d4e9e818a0 ---- /v1/users/login ---- POST ---- This user is not registered
+09/29/2023	15:28:14 --------- idError: da1e0fc8-503e-4b9b-9d01-5ed8d6eabce7 ---- /v1/users/login ---- POST ---- This user has not been registered
+09/29/2023	15:28:21 --------- idError: 5551857a-ae63-40ca-9d12-9ee434306841 ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	15:28:25 --------- idError: 16d0afcc-e1f8-4a99-a381-52368c91256e ---- /v1/users/login ---- POST ---- Invalid password
+09/29/2023	16:33:54 --------- idError: ffc64cec-5d1d-4a2e-a5f2-690fd0cfdf6d ---- /v1/users/login ---- POST ---- secretOrPrivateKey must have a value
+09/29/2023	16:42:28 --------- idError: 70320a0d-f0a8-45f6-afc8-ee021e5dd431 ---- /v1/users/login ---- POST ---- Expected "payload" to be a plain object.
+09/29/2023	17:01:56 --------- idError: af1a14e2-1aaf-4737-bfc6-7779d963c11c ---- /v1/users/list ---- GET ---- jwt expired
+09/29/2023	17:39:14 --------- idError: e744aeb7-8145-435d-b331-f5ab7d7f8d5d ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	11:29:16 --------- idError: 36dd309e-125f-4986-b333-c11c949472f7 ---- /v1/users/register ---- POST ---- jayden3@gmail.com has been already registered
+09/30/2023	11:29:29 --------- idError: 45a3ff42-20b1-42a1-a09f-86bcc08dc966 ---- /v1/users/login ---- POST ---- secretOrPrivateKey must have a value
+09/30/2023	11:29:45 --------- idError: b6f78c18-147e-4f8e-ab8d-6ae70eb47e80 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+09/30/2023	11:43:33 --------- idError: 375469f6-65af-4016-b3cc-f00ae5bd3718 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+09/30/2023	11:43:51 --------- idError: 683cc578-f775-41ea-b8bb-a156c56c6c36 ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	12:31:41 --------- idError: c4375361-ac20-4e06-bccb-5856a6c65a93 ---- /v1/users/list ---- GET ---- jwt expired
+09/30/2023	12:33:17 --------- idError: 4615f154-c131-4d3d-8ce1-8a1f30f8821c ---- /v1/users/list ---- GET ---- jwt expired
+10/01/2023	20:52:22 --------- idError: 8aaa1e28-b1cd-4455-8c22-9cc1dd3733c3 ---- /v1/users/list ---- GET ---- jwt expired
+10/01/2023	20:53:48 --------- idError: 542688be-291e-4576-acdc-ff1918a0dda8 ---- /info ---- POST ---- Route - /info  Not Found
+10/01/2023	20:59:41 --------- idError: b6351176-cc0f-4dc9-9102-6282d786417a ---- /v1/users/refresh-token ---- POST ---- invalid token
+10/01/2023	21:35:13 --------- idError: 6976499a-71dd-4630-8e7d-86e50645c297 ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/01/2023	21:35:21 --------- idError: 7d22674a-b825-45b5-88fd-b70699e1bcae ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/09/2023	16:54:45 --------- idError: 56ae9623-f67b-40ed-84d8-d172fe4ba3f3 ---- /v1/users/register ---- POST ---- "email" must be a valid email
+10/09/2023	16:55:27 --------- idError: 3bca7b5d-2ba0-4a6b-8834-8299ba19d52e ---- /v1/users/register ---- POST ---- "email" with value "tainguygmail2.com" fails to match the required pattern: /gmail.com$/
+10/09/2023	17:01:24 --------- idError: a0104574-0076-46a4-b5e1-f052ff96a4fe ---- /v1/users/register ---- POST ---- "email" with value "tainguy@gmail2.com" fails to match the required pattern: /gmail.com$/
+10/09/2023	17:03:31 --------- idError: a90dd20a-aa7f-44bd-a9c1-5d61cb81de51 ---- /v1/users/register ---- POST ---- tainguy1233hh3@gmail.com has been already registered
+10/09/2023	17:31:32 --------- idError: def8b912-e46f-475c-a055-66c47a1f578b ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:32:21 --------- idError: 110796c4-e42a-4949-b1dc-87409db9fc30 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:35:19 --------- idError: 9b62892b-d01b-47b9-92b2-76d367f6d0b0 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:36:01 --------- idError: afa81d30-6d32-45d4-a74d-f75ed00056b3 ---- /v1/users/list ---- GET ---- jwt expired
+10/09/2023	17:36:11 --------- idError: 3b2cacb9-2926-4c91-ad31-29b93cbc4cfd ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:38:04 --------- idError: 9759dd9d-c55c-4b96-af8a-4ecf5918e703 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:38:14 --------- idError: 8c907a8d-dd79-424e-8e34-003ec99980b3 ---- /v1/users/register ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/09/2023	17:38:17 --------- idError: 83efcdb0-d77f-4173-b37c-5783f5f89ea8 ---- /v1/users/register ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/09/2023	17:38:32 --------- idError: 6a54eeb2-5f2a-40bb-a932-b4896219ab9d ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:46:31 --------- idError: cb8baf4a-e928-4468-a113-20ce44b88c89 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:46:33 --------- idError: 38936698-19e6-4997-bcc4-b6b6e0d1d59f ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:47:21 --------- idError: cd4b9cd9-ac15-4ac7-bab6-779fd48e87f5 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/09/2023	17:56:42 --------- idError: ea6020ec-71be-44ba-9cdd-3e1704219d5d ---- /v1/users/login ---- POST ---- user.checkPassword is not a function
+10/10/2023	16:16:09 --------- idError: 572a64f8-cb7c-4a5e-b9f2-c8f9d59a39e8 ---- /v1/users/logout ---- POST ---- Route - /v1/users/logout  Not Found
+10/10/2023	16:16:49 --------- idError: 2c58fca5-7b91-4a5f-817a-6b00ecb17486 ---- /v1/users/log-out ---- POST ---- Route - /v1/users/log-out  Not Found
+10/10/2023	16:16:54 --------- idError: 2ce38278-3c32-443b-b07d-e0f2ef62dcc8 ---- /v1/users/logout ---- POST ---- Route - /v1/users/logout  Not Found
+10/10/2023	16:17:12 --------- idError: c622c9b7-13f9-4b18-814a-75d5911b5c36 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:17:21 --------- idError: 84f582f8-90a1-4661-ae4e-d64f4093a4cc ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:18:06 --------- idError: b42803d9-26b3-4f20-b15b-31005fcce405 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:18:34 --------- idError: 7765c974-a219-46d3-8023-848f938d9d23 ---- /v1/users/logout ---- DELETE ---- Bad Request
+10/10/2023	16:19:12 --------- idError: 30dbfcec-cb2f-4e62-9c79-f25c9873fb88 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+10/10/2023	16:19:43 --------- idError: 01b82bbf-51cb-4128-973d-dfd12c4d2cdb ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/10/2023	16:20:23 --------- idError: d2a4bd1d-cc43-49f1-aaa9-9c531e000ae1 ---- /v1/users/logout ---- DELETE ---- Unauthorized
+10/10/2023	16:23:15 --------- idError: bb46fbb8-da50-40f3-9eab-e2d376dac0bf ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/10/2023	16:25:08 --------- idError: dc94cb83-46a5-4d41-a4bb-0c0204a2d86f ---- /v1/users/logout ---- DELETE ---- invalid signature
+10/10/2023	16:25:16 --------- idError: 26994ae5-2c1a-4664-af14-05ba65b13a02 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/10/2023	16:25:26 --------- idError: 685c6b83-d39e-402b-99ff-02fda8332881 ---- /v1/users/refresh-token ---- POST ---- Unauthorized
+10/11/2023	11:53:49 --------- idError: f355654b-a647-407f-aad5-abc9dc30229f ---- /v1/users/register-otp ---- POST ---- Unexpected token } in JSON at position 43
+10/11/2023	11:53:54 --------- idError: f31cf9c3-f27d-4a19-8fea-0b5017305b48 ---- /v1/users/register-otp ---- POST ---- "password" is required
+10/11/2023	11:55:26 --------- idError: c317fd2a-91d0-4219-a2d3-ef5df8c01c4f ---- /v1/users/register-otp ---- POST ---- tainguy12333hh3@gmail.com has been already registered
+10/11/2023	14:25:35 --------- idError: 9cb922e5-60b9-44f3-a8de-dc51448229d6 ---- /v1/users/verify-otp ---- POST ---- "password" is not allowed
+10/11/2023	14:25:56 --------- idError: a72feb74-90be-446a-ba27-370d59d36a98 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:41:30 --------- idError: 4b8f37d7-dbed-4864-8c90-3256451a46d5 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:41:49 --------- idError: 64fbcbc9-f5db-4aba-9070-63960fb41987 ---- /v1/users/verify-otp ---- POST ---- "otp" is not allowed
+10/11/2023	14:45:15 --------- idError: ced3eb92-2099-445b-a8d0-f94913caf4d2 ---- /v1/users/verify-otp ---- POST ---- "otp" must be a string
+10/11/2023	15:03:11 --------- idError: bb83d89b-8ee4-4c41-be79-445887a214e2 ---- /v1/users/register-otp ---- POST ---- tainguy5@gmail.com has been already registered
+10/11/2023	15:03:16 --------- idError: cb8d56f4-fd7c-4e01-8368-11be9f736fda ---- /v1/users/register-otp ---- POST ---- "email" with value "tainguy5@gma3il.com" fails to match the required pattern: /gmail.com$/
+10/11/2023	15:13:36 --------- idError: 053cab50-6d96-4867-9b2d-3130dbfc8afa ---- /v1/users/register-otp ---- POST ---- tainguy6@gmail.com has been already registered
+10/26/2023	15:58:30 --------- idError: f1ed3f55-5ae4-423f-a007-08b6995619e1 ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/26/2023	15:58:35 --------- idError: 12bb0fa1-0576-4a16-a545-2a6d2362c14c ---- /v1/users/login ---- POST ---- NOAUTH Authentication required.
+10/26/2023	17:09:01 --------- idError: fdacb29d-cc3e-479c-a698-0c544b31a5e2 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:20:44 --------- idError: ecb5fc50-b0f7-4abb-bff8-8c1ae1f4538d ---- /v1/users/list ---- GET ---- jwt expired
+10/26/2023	17:20:58 --------- idError: 41d97a4a-bb6f-4f09-92b7-18fcff9403bc ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:21:54 --------- idError: a0ff2e5c-1a3b-4b8f-aa3e-ba3cff486186 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:23:08 --------- idError: 4ff4489c-ef20-4678-bc80-9e60b8609ebf ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:23:14 --------- idError: 830b0068-102d-4f3c-ad09-388105237bc2 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:03 --------- idError: f76c219d-d0e3-41ee-ad87-e17bda1800d1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:04 --------- idError: b06ddc30-4c84-4cf9-b978-bde25f99a6ab ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:27:07 --------- idError: 30f8aadf-76fb-4ef5-9cc9-7e5c757f40c1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:28:55 --------- idError: fddd229e-1f4e-431e-b41c-8a5eafd016e7 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:29:01 --------- idError: 38175cfd-5eef-4e8c-bee5-fa9f3638e0cd ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:29:02 --------- idError: 8ca9865e-9490-4c67-919f-283a5b26768a ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:33:26 --------- idError: 7ae23f90-8e23-4f70-9dce-8902142bf5ab ---- /v1/users/list ---- GET ---- jwt expired
+10/26/2023	17:33:44 --------- idError: 5a73f8f9-86f2-46c1-b0d2-8d9144f0c82b ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:34:57 --------- idError: adbcf8f0-761f-41d3-8b7d-147845d834c8 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:18 --------- idError: 75c727bf-1e03-4115-81e8-d39124af7de3 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:19 --------- idError: 58886083-ace0-4899-abd9-5e002e6b8d87 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:19 --------- idError: 72d708fc-497b-4aeb-9ec8-7320ab9d16c1 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:20 --------- idError: cec2eeb5-8723-4e7d-97a9-81b19d601398 ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:20 --------- idError: b84d0431-2e88-48fe-97f8-4e556c2eb05b ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	17:35:22 --------- idError: 03010481-e318-4f90-b9e2-b7f153209c3a ---- /v1/users/list ---- GET ---- Cannot set headers after they are sent to the client
+10/26/2023	18:01:20 --------- idError: ebf07551-d3c9-4c51-864c-f622b5168d80 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:24 --------- idError: e44b95e9-dca7-4d48-9706-8d2a580fc528 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:25 --------- idError: 1c07d10a-c8ff-4dcb-9c66-926b102118bf ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:25 --------- idError: 9a44668c-3b31-47b6-8e05-e21ce2bc8631 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:26 --------- idError: 9370705d-d38c-4130-a110-914b6ce049d1 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:01:27 --------- idError: fa2d16dc-d252-4f19-9af8-c841812ac8b3 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:05:58 --------- idError: 11fc0c2f-2e5a-41a4-a73c-63f0d909752a ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:06:21 --------- idError: 5bba5a73-addc-40a4-9bb9-118d2f7472ca ---- /v1/users/list ---- GET ---- Too Many Requests
+10/26/2023	18:06:22 --------- idError: f06aba0c-e8c4-4b41-8f62-92f2c99b22d0 ---- /v1/users/list ---- GET ---- Too Many Requests
+10/30/2023	16:34:28 --------- idError: ba848c6f-beab-4d2c-b8d6-befc77321c73 ---- /v1/users/list ---- GET ---- jwt expired
+10/30/2023	16:34:55 --------- idError: 49ce178e-f22d-4c0f-89f1-0b1420ce6482 ---- /v1/users/list ---- GET ---- Too Many Requests
+11/03/2023	13:57:02 --------- idError: d1351c93-76ff-4b69-8807-3c524a400a15 ---- /v1/upload ---- POST ---- Route - /v1/upload  Not Found
+11/03/2023	13:57:43 --------- idError: 8636297e-fb9f-4803-bddd-3109a24886ee ---- /v1/upload ---- POST ---- images is not iterable
+11/03/2023	13:58:41 --------- idError: 601d82cf-ace4-49a7-905d-71b75e95c3b5 ---- /v1/upload ---- POST ---- images is not iterable
+11/03/2023	14:11:22 --------- idError: 83476234-8efe-44de-a982-4c0c121e208f ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:12:59 --------- idError: 183a9eb0-1875-4fec-96ec-73263c3d18ca ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:13:07 --------- idError: 4c4cc53d-ccab-4a88-a7f3-878c16dc1062 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:14:00 --------- idError: 8830b7c3-9434-4e58-9944-d4f954a47066 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:15:16 --------- idError: c47336bd-d3aa-4dc8-ab0e-8d035ff6beb0 ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:19:00 --------- idError: a31a4598-c50f-4b5d-babb-ec6429fc48fa ---- /v1/upload ---- POST ---- Unexpected field
+11/03/2023	14:37:48 --------- idError: b2bc79df-eb4a-45b9-a966-33626108006d ---- /v1/upload ---- POST ---- undefined
