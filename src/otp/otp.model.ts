@@ -12,7 +12,7 @@ const OtpSchema: Schema<IOtp> = new Schema(
     createdAt: {
       type: Date,
       default: Date.now(),
-      index: { expires: 20 }
+      index: { expires: 30 }
     }
   },
   {

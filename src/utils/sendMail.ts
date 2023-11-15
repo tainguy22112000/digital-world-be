@@ -28,6 +28,7 @@ export const sendMail = async ({
 }: TSendMail) => {
   try {
     const accessToken = await oAuth2Client.getAccessToken()
+    
     const transport = nodemailer.createTransport({
       service: 'gmail',
       host: 'smtp.gmail.com',

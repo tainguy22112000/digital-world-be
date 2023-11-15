@@ -8,7 +8,7 @@ import {
 import { IUser, IUserDocument } from './user.interface'
 
 const UserSchema: Schema<IUserDocument> = new Schema({
-  username: {
+  email: {
     type: String,
     lowercase: true,
     unique: true,
@@ -18,6 +18,30 @@ const UserSchema: Schema<IUserDocument> = new Schema({
   password: {
     type: String,
     required: true
+  },
+
+  firstName: {
+    type: String
+  },
+
+  lastName: {
+    type: String
+  },
+
+  gender: {
+    type: String
+  },
+
+  phoneNumber: {
+    type: String
+  },
+
+  bio: {
+    type: String
+  },
+
+  address: {
+    type: String
   }
 })
 

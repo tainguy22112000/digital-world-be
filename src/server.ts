@@ -9,6 +9,7 @@ import { notFoundMiddleware } from './middlewares/errors/notFound'
 import userRouter from '@/users/user.route'
 import uploadRouter from '@/files/file.route'
 import authRouter from '@/auth/auth.route'
+import productRouter from '@/products/product.route'
 
 // Access environment variables
 dotenv.config()
@@ -30,6 +31,7 @@ startServer(app)
 app.use('/v1', userRouter)
 app.use('/v1', authRouter)
 app.use('/v1', uploadRouter)
+app.use('/v1', productRouter)
 
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)

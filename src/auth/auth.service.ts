@@ -2,32 +2,32 @@ import { enviromentConfig } from '@/configs/env.config'
 import client from '@/configs/redis.config'
 import { errorMessage } from '@/constants'
 import otpService from '@/otp/otp.service'
+import UserModel from '@/users/user.model'
 import { sendMail } from '@/utils/sendMail'
 import createHttpError from 'http-errors'
-import JWT, { VerifyErrors } from 'jsonwebtoken'
+import JWT from 'jsonwebtoken'
 import { Types } from 'mongoose'
 import otpGenerator from 'otp-generator'
 import { IToken, IUserRegister } from './auth.interface'
-import UserModel from '@/users/user.model'
-import { verifyRefreshToken } from '@/middlewares/verifyRefreshToken'
+import { verifyRefreshToken } from '@/middlewares'
 
 const authService = {
   register: async ({ email, password }: IUserRegister) => {
-    const isExisted = await UserModel.findOne({ username: email })
+    const isExisted = await UserModel.findOne({ email })
     if (isExisted) {
       throw createHttpError.Conflict(errorMessage.registerd(email))
     }
 
-    const user = new UserModel({ username: email, password })
+    const user = new UserModel({ email, password })
     return (await user.save()).toObject()
   },
 
   checkEmail: async ({ email }: Pick<IUserRegister, 'email'>) => {
-    return await UserModel.findOne({ username: email })
+    return await UserModel.findOne({ email })
   },
 
   registerOtp: async ({ email }: Pick<IUserRegister, 'email'>) => {
-    const isExisted = await UserModel.findOne({ username: email })
+    const isExisted = await UserModel.findOne({ email })
     if (isExisted) {
       throw createHttpError.Conflict(errorMessage.registerd(email))
     }
@@ -69,7 +69,7 @@ const authService = {
     })
   },
   login: async ({ email, password }: IUserRegister) => {
-    const user = await UserModel.findOne({ username: email })
+    const user = await UserModel.findOne({ email })
     if (!user) {
       throw createHttpError.NotFound(errorMessage.NOT_REGISTERED)
     }

@@ -1,14 +1,61 @@
-import { Schema, model } from 'mongoose'
-import { IProduct } from './product.interface'
+import mongoose, { Schema, model } from 'mongoose'
+import { EProductColor, IProduct } from './product.interface'
 
-const ProductSchema = new Schema<IProduct>(
+const ProductSchema = new Schema(
   {
-    productId: { type: Number, required: true },
-    code: String,
-    name: String,
-    brand: String,
-    desciption: String,
-    release_date: Date,
+    title: {
+      type: String,
+      required: true,
+      trim: true
+    },
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+      lowercase: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    brand: {
+      type: String,
+      required: true
+    },
+    price: {
+      type: Number,
+      required: true
+    },
+    category: {
+      type: mongoose.Types.ObjectId,
+      ref: 'Category'
+    },
+    quantity: {
+      type: Number,
+      default: 0
+    },
+    sold: {
+      type: Number,
+      default: 0
+    },
+    images: {
+      type: Array
+    },
+    color: {
+      type: String,
+      enum: EProductColor
+    },
+    ratings: [
+      {
+        star: { type: Number },
+        postedBy: { type: mongoose.Types.ObjectId, ref: 'User' },
+        comment: { type: String }
+      }
+    ],
+    totalRatings: {
+      type: Number,
+      default: 0
+    },
     specs: { type: Array, default: [] }
   },
   {

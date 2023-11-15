@@ -30,7 +30,7 @@ export const authController = {
     try {
       const { code, data, message } = await otpService.verifyOtp(req.body)
 
-      return res.status(code).json({ message, data: data?.username })
+      return res.status(code).json({ message, data: data?.email })
     } catch (err) {
       next(err)
     }

@@ -161,3 +161,60 @@
 11/14/2023	16:50:29 --------- idError: fbf44327-b02a-452e-a2ed-5acbd948c5e3 ---- /v1/users/register-otp ---- POST ---- Invalid status code: undefined
 11/14/2023	16:51:03 --------- idError: d7936f76-094a-4273-9bb0-26cf2d1b1332 ---- /v1/users/register-otp ---- POST ---- Invalid status code: undefined
 11/14/2023	16:55:18 --------- idError: 7c9a17b1-9adf-4234-9048-5562c1735846 ---- /v1/users/list ---- GET ---- jwt expired
+11/15/2023	11:45:35 --------- idError: f1aedd86-3f41-4573-8768-2e87dbffec38 ---- /v1/users/list ---- GET ---- Auth Failed (Unauthorized)
+11/15/2023	11:45:39 --------- idError: 4f6114ba-3c59-4a01-9f7d-3dd6a11f0f6c ---- /v1/users/login ---- POST ---- This user has not been registered
+11/15/2023	11:45:53 --------- idError: f45e68e7-fc03-4b92-b8f3-5da551032f56 ---- /v1/users/register ---- POST ---- tai.nguy@gmail.com has been already registered
+11/15/2023	11:46:08 --------- idError: 2d1a5a6f-5f76-4804-8e50-3459bd287ad9 ---- /v1/users/register-otp ---- POST ---- "firstName" is required
+11/15/2023	11:46:30 --------- idError: a61d0ce9-4079-4d2a-a586-52bcbc6fd667 ---- /v1/users/verify-otp ---- GET ---- Route - /v1/users/verify-otp  Not Found
+11/15/2023	11:46:55 --------- idError: 279f099f-ba0a-4286-9e03-d40db53d465c ---- /v1/users/655439da8878c73b9856aa8f ---- GET ---- Route - /v1/users/655439da8878c73b9856aa8f  Not Found
+11/15/2023	13:30:46 --------- idError: 91dc50de-ed03-4a15-8f26-0e15ff53a736 ---- /v1/users/update ---- PATCH ---- Auth Failed (Unauthorized)
+11/15/2023	13:31:02 --------- idError: b6f6a2fc-931e-4dc0-b0c7-208e6c202687 ---- /v1/users/update ---- PATCH ---- Bad Request
+11/15/2023	13:32:14 --------- idError: 04d2154d-afa2-4f69-bd70-633ff65d8d34 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:32:25 --------- idError: 34684924-8212-4148-8448-aa652e401fd9 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:32:41 --------- idError: b32b3b92-9752-4d7a-b03e-16ce4b920cf9 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:33:09 --------- idError: f9b19525-679d-41b5-b258-30a1bd2e3d43 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:33:36 --------- idError: a142eaf4-f104-41c1-a709-75d04983ae86 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:34:30 --------- idError: 3f4387f8-2bd7-40f7-af22-81a1835a5d29 ---- /v1/users/update ---- PATCH ---- Not Found
+11/15/2023	13:35:38 --------- idError: a4466d4d-80b8-4264-8b74-64fceeca455f ---- /v1/users/update ---- PATCH ---- User validation failed: lastName: Path `lastName` is required.
+11/15/2023	14:17:49 --------- idError: 529e363d-e69d-4fa3-b9e5-3a11e18820c4 ---- /v1/users/update ---- PATCH ---- jwt expired
+11/15/2023	14:17:59 --------- idError: e612acd1-8bab-4ff6-9195-44c5cbf4f64b ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:18:20 --------- idError: 5f3e3a2c-c98f-4871-aa21-7d894f5d3ac3 ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:18:24 --------- idError: 905ee9da-0d20-4896-913f-46c9a564e3ab ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:18:56 --------- idError: 2bb2ba62-c1f9-4b31-a853-cd6e34832623 ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:19:34 --------- idError: 522ce24e-3dd2-4727-94dd-278174447a4d ---- /v1/users/update ---- PATCH ---- Bad Request
+11/15/2023	14:20:33 --------- idError: e5078fd6-87f6-44e2-b9e2-cf7cdfeec8b4 ---- /v1/users/list ---- GET ---- jwt expired
+11/15/2023	14:21:00 --------- idError: b7b072d0-486f-4215-b530-33bb53e9a99d ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:22:13 --------- idError: 445998ee-e00f-401e-9397-405e9207817d ---- /v1/users/login ---- POST ---- "password" length must be less than or equal to 32 characters long
+11/15/2023	14:22:26 --------- idError: 00696e27-a6ba-4f48-a6ab-352f8d74df86 ---- /v1/users/register ---- POST ---- E11000 duplicate key error collection: test.users index: username_1 dup key: { username: null }
+11/15/2023	14:23:01 --------- idError: 140c3da9-57cf-44a5-9da6-32636795bea7 ---- /v1/users/register ---- POST ---- E11000 duplicate key error collection: test.users index: username_1 dup key: { username: null }
+11/15/2023	14:24:09 --------- idError: b63c1904-4e54-48c1-989f-fd5b89df9560 ---- /v1/users/register ---- POST ---- E11000 duplicate key error collection: test.users index: username_1 dup key: { username: null }
+11/15/2023	14:24:57 --------- idError: 860d976a-8989-4857-b380-cbb7c45959de ---- /v1/users/register ---- POST ---- E11000 duplicate key error collection: test.users index: username_1 dup key: { username: null }
+11/15/2023	14:26:42 --------- idError: 6b7a17d4-0ba7-4aa3-9b57-d6f831903fc8 ---- /v1/users/register ---- POST ---- E11000 duplicate key error collection: test.users index: username_1 dup key: { username: null }
+11/15/2023	14:31:49 --------- idError: 6953796d-c436-4306-bb9f-0ba3e3336197 ---- /v1/users/update ---- PATCH ---- jwt expired
+11/15/2023	14:31:53 --------- idError: 1345a649-a802-4f82-a29c-c42929ef2e98 ---- /v1/users/login ---- POST ---- Invalid password
+11/15/2023	14:32:02 --------- idError: b04411b3-d038-43b3-9485-66b260721681 ---- /v1/users/register ---- POST ---- jaydennguy@gmail.com has been already registered
+11/15/2023	14:59:53 --------- idError: 2748fe63-2700-49e3-942d-b5dd75b5274b ---- /v1/users/update ---- PATCH ---- jwt expired
+11/15/2023	15:02:55 --------- idError: ea7fd40c-dbc2-447f-a2ab-b58b2b791da8 ---- /v1/users/update ---- PATCH ---- Cast to ObjectId failed for value "aaaaaaaa" (type string) at path "_id" for model "User"
+11/15/2023	15:03:55 --------- idError: 879c84db-ef2c-4c26-a872-8c8e77966abf ---- /v1/users/update ---- PATCH ---- Cast to ObjectId failed for value "aaaaa" (type string) at path "_id" for model "User"
+11/15/2023	15:06:57 --------- idError: 7188ebdf-9ac6-4bea-a400-ca9e76682a74 ---- /v1/users/update ---- PATCH ---- Cast to ObjectId failed for value "aaaaa" (type string) at path "_id" for model "User"
+11/15/2023	15:07:21 --------- idError: 42dad948-bd0d-4293-b22c-23b0d479a93f ---- /v1/users/update ---- PATCH ---- Cast to ObjectId failed for value "aaaaa" (type string) at path "_id" for model "User"
+11/15/2023	16:03:38 --------- idError: 2a67d7b0-29cc-4b05-973c-670e2212292b ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- Route - /v1/users/65547307f427088c02efeab4  Not Found
+11/15/2023	16:04:10 --------- idError: fa167f27-5211-4db0-bfa0-b7e1b49016dd ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- jwt expired
+11/15/2023	16:04:34 --------- idError: daf3703b-cae7-46fd-9f64-f70560bfad66 ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- User not found
+11/15/2023	16:04:52 --------- idError: b3d2f7f0-bac5-4643-8707-11f1549dd9bb ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- User not found
+11/15/2023	16:05:35 --------- idError: 99d31f62-2d68-430c-865c-cdd2a70c29d6 ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- User not found
+11/15/2023	16:07:07 --------- idError: 8385ba33-8e39-4e65-be3c-160ad97c8121 ---- /v1/users/65547307f427088c02efeab4 ---- DELETE ---- User not found
+11/15/2023	16:07:56 --------- idError: 1da0d550-d13f-467d-be18-ec16e45bd8ff ---- /v1/users/verify-otp ---- PATCH ---- Route - /v1/users/verify-otp  Not Found
+11/15/2023	16:08:11 --------- idError: b9f54389-3713-4694-8af3-d57fed411cc0 ---- /v1/users ---- PATCH ---- jwt expired
+11/15/2023	16:08:58 --------- idError: 054b697e-1b6e-4066-a8b4-4845ebe42bde ---- /v1/users/login ---- POST ---- This user has not been registered
+11/15/2023	16:11:13 --------- idError: 333c1af2-6f93-494c-9277-ef5d57bb8f8a ---- /v1/users/65548a50a3f797053e7e74fe ---- DELETE ---- User not found
+11/15/2023	17:21:13 --------- idError: b7a76ee7-7957-4b74-9557-29e5df5d8876 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/15/2023	17:22:09 --------- idError: 06af4526-3c81-4544-a285-3cb8edbd0525 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/15/2023	17:22:11 --------- idError: 6bb76df4-7eee-453c-82fc-18837be733e3 ---- /v1/products/create ---- POST ---- Route - /v1/products/create  Not Found
+11/15/2023	17:22:47 --------- idError: f75c6d64-8cea-4714-b50e-d9dc725dc873 ---- /v1/products/create ---- POST ---- Auth Failed (Unauthorized)
+11/15/2023	17:33:09 --------- idError: 50801bfc-ccdf-4957-8e42-6a9fbec4b550 ---- /v1/products/create ---- POST ---- jwt expired
+11/15/2023	17:55:33 --------- idError: e9bc0fbe-1915-4eea-846c-029ee179d5b1 ---- /v1/products/ ---- GET ---- Route - /v1/products/  Not Found
+11/15/2023	17:55:38 --------- idError: d3b1cf1b-a5a5-40bc-86a3-afc47a35fcfa ---- /v1/products/%20 ---- GET ---- Route - /v1/products/%20  Not Found
+11/15/2023	17:56:05 --------- idError: cc956d90-c23b-4ab7-985a-da707abbaee3 ---- /v1/products/ ---- GET ---- Route - /v1/products/  Not Found
+11/15/2023	17:56:11 --------- idError: 45fbb7ec-cf87-4a5f-91a7-e3a0a5f07bb7 ---- /v1/products/%20 ---- GET ---- Cast to ObjectId failed for value " " (type string) at path "_id" for model "Product"
+11/15/2023	17:56:55 --------- idError: a821ad6f-16bb-4faf-b5d7-9a7453e59ef7 ---- /v1/products/%20 ---- GET ---- Cast to ObjectId failed for value " " (type string) at path "_id" for model "Product"
