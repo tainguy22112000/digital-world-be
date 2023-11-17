@@ -1,3 +1,5 @@
+import { TPagination } from '@/interface/global'
+import { IUser } from '@/users/user.interface'
 import { Document } from 'mongoose'
 
 enum EProductColor {
@@ -6,7 +8,7 @@ enum EProductColor {
   BLUE = 'blue'
 }
 
-type TRating = { star: number; posterBy: string; comment: string }
+type TRating = { star: number; postedBy: IUser['id']; comment: string }
 interface IProduct extends Document {
   title: string
   slug: string
@@ -20,7 +22,7 @@ interface IProduct extends Document {
   sold: number
   images: string
   color: EProductColor
-  rating: TRating
+  ratings: TRating[]
   totalRatings: number
 
   release_date: Date
@@ -28,5 +30,28 @@ interface IProduct extends Document {
 }
 
 type TCreateProduct = Omit<IProduct, 'Document'>
+type TUpdateProduct = Omit<IProduct, 'Document' | 'slug'> & {
+  id: string
+}
 
-export { IProduct, EProductColor, TCreateProduct }
+type TRatingProduct = {
+  uid: string
+  star?: number
+  comment?: string
+  pid: string
+}
+
+interface IProductPagination<T> extends TPagination<T> {
+  title?: string
+  minPrice?: number
+  maxPrice?: number
+}
+
+export {
+  EProductColor,
+  IProduct,
+  IProductPagination,
+  TCreateProduct,
+  TRatingProduct,
+  TUpdateProduct
+}

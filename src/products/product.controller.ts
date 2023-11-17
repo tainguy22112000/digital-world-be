@@ -27,5 +27,42 @@ export const productController = {
     } catch (err) {
       next(err)
     }
+  },
+  getAllProducts: async (
+    req: IAuthRequest,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const { code, products, totalPages, currentPage } =
+        await productService.getAll(req.query)
+      return res.status(code).json({ data: products, totalPages, currentPage })
+    } catch (err) {
+      next(err)
+    }
+  },
+  updateProduct: async (
+    req: IAuthRequest,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const { code, data, message } = await productService.update(req.body)
+      return res.status(code).json({ data, message })
+    } catch (err) {
+      next(err)
+    }
+  },
+  ratingProduct: async (
+    req: IAuthRequest,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+      const { code, message, data } = await productService.ratings(req.body)
+      return res.status(code).json({ message, data })
+    } catch (err) {
+      next(err)
+    }
   }
 }

@@ -32,14 +32,10 @@ const userService = {
     phoneNumber,
     bio
   }: TUpdateUser) => {
-    if (!id) {
-      throw createHttpError.NotFound()
-    }
-
     const user = await UserModel.findById(id)
 
-    if (!user) {
-      throw createHttpError.BadRequest('User not found')
+    if (!user || !id) {
+      throw createHttpError.NotFound('User not found')
     }
 
     const updatedUser = await UserModel.findByIdAndUpdate(
