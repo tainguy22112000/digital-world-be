@@ -240,3 +240,28 @@
 11/17/2023	17:49:06 --------- idError: ab32443c-3f0a-4e5b-8181-309fa541859a ---- /v1/products/ratings ---- PUT ---- el.postedBy.lean is not a function
 11/17/2023	17:54:18 --------- idError: 5852d782-8211-4764-9957-c5790257a86e ---- /v1/products/ratings ---- PUT ---- el.postedBy.toObject is not a function
 11/17/2023	17:59:16 --------- idError: 889adc31-a5af-480e-9110-da1d43f4d8e2 ---- /v1/products/ratings ---- PUT ---- $elemMatch needs an Object
+11/20/2023	15:06:01 --------- idError: ce105c75-e491-4822-ac25-54144807553b ---- /v1/users/register ---- POST ---- "firstName" is required
+11/20/2023	15:06:45 --------- idError: cd68b2ac-3710-4265-8354-8c0e4c9a1501 ---- /v1/users/login ---- POST ---- This user has not been registered
+11/20/2023	15:26:58 --------- idError: 664f0be6-65f9-49c0-9761-51c47724be7e ---- /v1/users/all ---- GET ---- jwt expired
+11/20/2023	15:27:17 --------- idError: a35a6b7a-7bff-44e6-ad96-6cfa015ff36d ---- /v1/users ---- PATCH ---- "firstName" is required
+11/20/2023	15:27:50 --------- idError: 25cdee80-4336-4231-b364-d41d71e33894 ---- /v1/users ---- PATCH ---- "firstName" is required
+11/20/2023	15:28:07 --------- idError: 2822a93f-dd91-4de3-81fc-7b26fe33b65e ---- /v1/users ---- PATCH ---- "firstName" is required
+11/20/2023	15:28:49 --------- idError: d7377f30-9124-470d-922c-70a97fc695f1 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:29:01 --------- idError: b4dd4d27-88d7-47bf-afec-c31c705d7c8a ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:29:31 --------- idError: 71fc95a6-dbe0-4bf3-8e08-a31160014e01 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:33:12 --------- idError: ca389fed-47c2-404f-8f18-71d4622ac835 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:34:41 --------- idError: 34d605d0-7b92-4845-9c1b-298beeb931f2 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:38:17 --------- idError: eb91857b-b93d-4a53-8ee1-275fed6c0350 ---- /v1/users ---- PATCH ---- jwt expired
+11/20/2023	15:38:33 --------- idError: 09407226-6d40-4f46-862c-d51f40648627 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:38:47 --------- idError: 6ee11c44-3a64-4fae-81c0-e9e26abc8617 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:38:48 --------- idError: d7bc24c9-da3e-4589-b876-a64ca3ccac11 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:42:53 --------- idError: 82b09f49-243b-4e27-b22a-a09fd5b97130 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:43:00 --------- idError: c8429f69-ce04-4e86-9bf4-2c43f24cc5f1 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:43:28 --------- idError: cd4ad60c-eae2-4ec1-8154-3d2bf77ccf12 ---- /v1/users ---- PATCH ---- User not found
+11/20/2023	15:46:10 --------- idError: 790b311b-74b2-4159-96e1-eda68bc17bbf ---- /v1/users ---- PATCH ---- Unexpected field
+11/20/2023	15:49:12 --------- idError: 279ee695-7f26-4bed-8a55-49409b85a3b6 ---- /v1/users ---- PATCH ---- jwt expired
+11/20/2023	16:05:23 --------- idError: f6b10629-37db-488b-a8fc-d4ad4832a051 ---- /v1/users ---- PATCH ---- jwt expired
+11/20/2023	16:10:43 --------- idError: 7af1f672-5c76-4f13-a123-b41330aa0545 ---- /v1/users ---- PATCH ---- "firstName" is required
+11/20/2023	16:11:18 --------- idError: 342c7c32-d26e-4480-b51d-7e1d1d193b1e ---- /v1/users ---- PATCH ---- "phoneNumber" is not allowed to be empty
+11/20/2023	16:12:25 --------- idError: 207b3f82-d105-47a1-8193-e72afa7ee2cf ---- /v1/users ---- PATCH ---- "Gender must be one of 'male', 'female" must be one of [male, female]
+11/20/2023	16:12:54 --------- idError: e6a5dd4c-3d0e-4e33-b540-d04d029eed47 ---- /v1/users ---- PATCH ---- "id" is not allowed

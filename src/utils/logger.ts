@@ -11,7 +11,7 @@ export const logEvents = async (msg: string) => {
   try {
     fs.appendFile(fileName, contentLog, err => {
       if (err) throw err
-      console.log('The data to append was appended to file!')
+      console.log('The data was appended to file!')
     })
   } catch (err) {
     console.error(err)
