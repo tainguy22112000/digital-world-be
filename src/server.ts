@@ -1,3 +1,8 @@
+import authRouter from '@/auth/auth.route'
+import productCategoryRouter from '@/categories/productCategory/product-category.route'
+import uploadRouter from '@/files/file.route'
+import productRouter from '@/products/product.route'
+import userRouter from '@/users/user.route'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import express, { Application } from 'express'
@@ -6,10 +11,6 @@ import morgan from 'morgan'
 import { startServer } from './configs/db.config'
 import { errorHandlerMiddleware } from './middlewares/errors/errorHandlers'
 import { notFoundMiddleware } from './middlewares/errors/notFound'
-import userRouter from '@/users/user.route'
-import uploadRouter from '@/files/file.route'
-import authRouter from '@/auth/auth.route'
-import productRouter from '@/products/product.route'
 
 // Access environment variables
 dotenv.config()
@@ -32,6 +33,7 @@ app.use('/v1', userRouter)
 app.use('/v1', authRouter)
 app.use('/v1', uploadRouter)
 app.use('/v1', productRouter)
+app.use('/v1', productCategoryRouter)
 
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)

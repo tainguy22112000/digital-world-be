@@ -9,7 +9,6 @@ import {
   TUpdateProduct
 } from './product.interface'
 import ProductModel from './product.model'
-import { randomInt } from 'crypto'
 
 const productService = {
   create: async (params: TCreateProduct) => {
@@ -27,12 +26,15 @@ const productService = {
     }
   },
   getOne: async (id: string) => {
-    const product = await ProductModel.findById(id)
+    const product = await ProductModel.findById(id).lean().populate('category')
 
     if (!product || !id.trim()) {
       return { code: 404, message: errorMessage.notFound('Product') }
     }
-    return { code: 200, product }
+    return {
+      code: 200,
+      product
+    }
   },
   getAll: async ({
     limit = 20,
@@ -53,6 +55,7 @@ const productService = {
       .limit(limit)
       .skip((page - 1) * limit)
       .sort({ [sortBy]: order })
+      .populate('category')
 
     const count = await x.countDocuments()
 
@@ -65,10 +68,10 @@ const productService = {
   },
   update: async (params: TUpdateProduct) => {
     const { id, ...otherParams } = params
-    const user = await ProductModel.findById(id)
+    const product = await ProductModel.findById(id)
     const newSlug = slugify(params.title)
 
-    if (!user || !id) {
+    if (!product || !id) {
       throw createHttpError.NotFound('Products not found')
     }
 
@@ -90,6 +93,11 @@ const productService = {
     }
 
     const ratingProduct = await ProductModel.findById(pid).lean()
+    const ratingCount = ratingProduct?.ratings.length ?? 1
+    const totalRatings =
+      ratingProduct?.ratings.reduce((total, item) => item.star + total, 0) ?? 0
+
+    const averageRating = (totalRatings / ratingCount).toFixed(2)
 
     if (!ratingProduct) {
       throw createHttpError.NotFound()
@@ -98,23 +106,31 @@ const productService = {
       el => el.postedBy.toString() === uid
     )
 
-    console.log({ isExisted, uid })
-    console.log(ratingProduct.ratings)
-
     if (isExisted) {
       await ProductModel.updateOne(
         {
           ratings: { $elemMatch: isExisted }
         },
         {
-          $set: { 'ratings.$.star': star, 'ratings.$.comment': comment }
+          $set: {
+            'ratings.$.star': star,
+            'ratings.$.comment': comment,
+            totalRatings: averageRating
+          }
         }
       )
+      return {
+        code: 200,
+        message: 'Thanks for your feedback'
+      }
     } else {
       const response = await ProductModel.findByIdAndUpdate(
         pid,
         {
-          $push: { ratings: { star, comment, postedBy: uid } }
+          $push: {
+            ratings: { star, comment, postedBy: uid },
+            totalRatings: averageRating
+          }
         },
         { new: true }
       )
@@ -123,10 +139,6 @@ const productService = {
         message: 'Thanks for your feedback',
         data: response
       }
-    }
-    return {
-      code: 200,
-      message: 'Thanks for your feedback'
     }
   }
 }

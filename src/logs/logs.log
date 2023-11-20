@@ -265,3 +265,7 @@
 11/20/2023	16:11:18 --------- idError: 342c7c32-d26e-4480-b51d-7e1d1d193b1e ---- /v1/users ---- PATCH ---- "phoneNumber" is not allowed to be empty
 11/20/2023	16:12:25 --------- idError: 207b3f82-d105-47a1-8193-e72afa7ee2cf ---- /v1/users ---- PATCH ---- "Gender must be one of 'male', 'female" must be one of [male, female]
 11/20/2023	16:12:54 --------- idError: e6a5dd4c-3d0e-4e33-b540-d04d029eed47 ---- /v1/users ---- PATCH ---- "id" is not allowed
+11/20/2023	16:32:02 --------- idError: 8856ed3e-9221-4e1e-abbe-6c5ca5ebaf5a ---- /v1/users/all ---- GET ---- jwt expired
+11/20/2023	16:32:05 --------- idError: eac4490c-b426-43da-a44b-0c03757086a9 ---- /v1/users/all ---- GET ---- jwt expired
+11/20/2023	17:29:57 --------- idError: 3b744061-510e-4877-a7ca-94324a43d486 ---- /v1/product-category/create ---- POST ---- Route - /v1/product-category/create  Not Found
+11/20/2023	17:30:57 --------- idError: 9de436bb-0b6e-4c16-8bca-2d2692d19a38 ---- /v1/product-category/create ---- POST ---- Unauthorized
