@@ -1,6 +1,7 @@
 import createHttpError from 'http-errors'
 import { TDeleteUser, TUpdateUser } from './user.interface'
 import UserModel from './user.model'
+import uploadService from '@/files/file.service'
 
 const userService = {
   getAllUsers: async () => {
@@ -30,7 +31,8 @@ const userService = {
     gender,
     address,
     phoneNumber,
-    bio
+    bio,
+    avatar
   }: TUpdateUser) => {
     const user = await UserModel.findById(id)
 
@@ -38,9 +40,19 @@ const userService = {
       throw createHttpError.NotFound('User not found')
     }
 
+    const { data: avatarUrl } = await uploadService.uploadImage(avatar)
+
     const updatedUser = await UserModel.findByIdAndUpdate(
       id,
-      { firstName, lastName, gender, address, phoneNumber, bio },
+      {
+        firstName,
+        lastName,
+        gender,
+        address,
+        phoneNumber,
+        bio,
+        avatar: avatarUrl?.url
+      },
       { returnOriginal: false, new: true }
     ).select('-password -role')
 

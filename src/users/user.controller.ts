@@ -30,7 +30,10 @@ export const userController = {
     next: NextFunction
   ) => {
     try {
-      const { code, data, message } = await userService.updateUser(req.body)
+      const { code, data, message } = await userService.updateUser({
+        ...req.body,
+        avatar: req.file?.path
+      })
       return res
         .status(code)
         .json({ user: data, message, numberRequest: req.limit })

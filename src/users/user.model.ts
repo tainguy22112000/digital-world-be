@@ -42,6 +42,11 @@ const UserSchema: Schema<IUserDocument> = new Schema({
 
   address: {
     type: String
+  },
+
+  avatar: {
+    type: String,
+    trim: true
   }
 })
 

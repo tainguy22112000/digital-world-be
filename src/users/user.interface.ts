@@ -23,6 +23,7 @@ interface IUser extends Document {
   gender: EGender
   phoneNumber?: string
   bio?: string
+  avatar?: string
 }
 
 type TUpdateUser = Omit<

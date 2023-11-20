@@ -2,6 +2,7 @@ import Joi from 'joi'
 
 const userSchema = {
   updateUser: Joi.object({
+    id: Joi.string().required(),
     firstName: Joi.string().max(24).required(),
     lastName: Joi.string().max(24).required(),
     phoneNumber: Joi.string().trim().regex(/[0-9]/).max(15),

@@ -1,7 +1,10 @@
 import { cloudinary } from '@/configs/cloudinary.config'
 
 const uploadService = {
-  uploadImage: async (imagePath?: string) => {
+  uploadImage: async (
+    imagePath?: string,
+    folder: string | undefined = 'images'
+  ) => {
     if (!imagePath)
       return {
         code: 404,
@@ -9,7 +12,7 @@ const uploadService = {
       }
 
     const results = await cloudinary.uploader.upload(imagePath, {
-      folder: 'images'
+      folder: folder
     })
 
     return {
